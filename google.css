@@ -75,6 +75,7 @@ header>ul>li> div.frame{
     height: 450px;
 }
 .user-frame{
+    display: block;
     position:absolute;
     top: 70px;
     left:-350px;
@@ -87,7 +88,7 @@ header>ul>li> div.frame{
 .user-triangle{
     position:absolute;
     top: -10px;
-    left: 322px;
+    left: 372px;
     z-index:1000;
     width:0;
     height: 0;
@@ -628,6 +629,14 @@ main div{
     margin-top:10px;
 }
 main>form button{
+    border: 1px solid #ccc;
+    background: #eee;
+    border-radius: 1px;
+    padding:10px;
+    font-weight: bold;
+    font-size: 10px;
+}
+.roll{
     border: 1px solid #ccc;
     background: #eee;
     border-radius: 1px;

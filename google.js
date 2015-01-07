@@ -14,6 +14,11 @@ $(function(){
                 $(".bell-frame").toggleClass("no-display");
             }
         } ;
+        if (!($(event.target).closest(".user-li").hasClass("user-li"))){
+            if(!($(".user-frame").hasClass("no-display"))){
+                $(".user-frame").toggleClass("no-display");
+            }
+        } ;
         if (!($(event.target).closest(".plus-li").hasClass("plus-li"))){
 
             if(!($(".plus-frame").hasClass("no-display"))){
@@ -51,6 +56,11 @@ $(function(){
         event.stopPropagation();
 
     });
+    $(".user-li").on("click",function(event){
+
+        event.preventDefault();
+        $(".user-frame").toggleClass("no-display");
+    });
     $(".plus-li").on("click",function(event){
         event.preventDefault();
         $(".plus-frame").toggleClass("no-display");
@@ -84,5 +94,18 @@ $(function(){
         $("footer").css({"color":"black","background":"#eee"});
         $(".plus-frame").css({"color":"black","background":"#eee"});
     });
-    
+    var words= ["I'm Feeling Lucky", "I'm Feeling Hungry",
+"I'm Feeling Wonderful", "I'm Feeling Playful","I'm Feeling Trendy",
+    "I'm Feeling Artistic","I'm Feeling Puzzled",
+    "I'm Feeling Generous"];
+
+
+    $(".roll").hover(function(){
+        var n = Math.floor(Math.random() * words.length);
+        $(this).prop("value",words[n]);
+    },
+    function(){
+        $(this).prop("value","I'm Feeling Lucky");
+    }
+    );
 });
