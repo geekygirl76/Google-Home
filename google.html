@@ -58,8 +58,8 @@
                         </ul>
                     </div>
                 </li>
-                <li><img src="plus.png" width="15px" height="15px" class="plus">
-                <div class="plus-frame">
+                <li class="plus-li"><img src="plus.png" width="15px" height="15px" class="plus">
+                <div class="plus-frame no-display">
                     <div class="plus-triangle">
                     </div>
                     <form class="add-people">
@@ -72,18 +72,62 @@
                             <li><a href="#"><img src="poll.png">Poll</a></li>
 
                         </ul>
-                        <input type="text" placeholder="Publica    +Add more people">
-                        <button id="public">Public</button>
+                        <input type="text" placeholder="Publica          +Add more people" id="add-input">
+                        <button id="public">Public<img src="close.png" width="15px" height="20px" id="close-icon">
+                        <div class="public-frame">
+                            <div id="public-warning" ><p>Public</p>May be visible by anyone, anywhere</div>
+                            <div id="public-triangle"></div>
+                        </div>
+                        </button>
                         <h6>&#9660;</h6>
-                        <a href="#"><img src="add-user.png" width="20px"></a>
+                        <a href="#"><img src="add-user.png" width="20px" id="user-face"></a>
                         <button id="share">Share</button>
                         <button id="cancel">Cancel</button>
                     </form>
                 </div>
+
                 </li>
-                <li><img src="user.jpg" width="38px" height="38px" class="user"></li>
+                <li><img src="user.jpg" width="38px" height="38px" class="user">
+                    <div class="user-frame">
+                        <div class="user-triangle"></div>
+                        <div class="user-box">
+                        </div>
+                    </div>
+                </li>
             </ul>
         </header>
+
+        <div class="modal no-display">
+            <div class="title">
+                <h1>Browse People</h1>
+                <a href="#" id="search-close">&times;</a>
+            </div>
+            <div class="middle group">
+                <ul class="sidebar">
+                    <li><a href="#">Everyone</a></li>
+                    <li><a href="#">&#9675; Friends</a></li>
+                    <li><a href="#">&#9675; Family</a></li>
+                    <li><a href="#">&#9675;
+                        Acquaitances</a></li>
+                    <li><a href="#">&#9675;
+                        Following</a></li>
+                </ul>
+                <form class="main">
+                    <input type="text" placeholder="Search by name or email address" autofocus="true" class="search-bar">
+                    <h5>Frequently Contacted</h5>
+                    <ul>
+                        <li class="group"><a href="#"><img src="user.jpg" width="50px" height="50px"><h6>Contact One</h6></a></li>
+                        <li class="group"><a href="#"><img src="user.jpg" width="50px" height="50px"><h6>Contact Two</h6></a></li>
+                    </ul>
+                </form>
+            </div>
+            <ul class="buttons group">
+
+                <li><button class="cancel">Cancel</button></li>
+                <li><button class="done">Done</button></li>
+            </div>
+        </div>
+
 
         <main>
             <img src="google-logo.png">
