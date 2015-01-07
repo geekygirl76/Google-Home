@@ -77,9 +77,9 @@ header>ul>li> div.frame{
 .user-frame{
     position:absolute;
     top: 70px;
-    left:-300px;
+    left:-350px;
     z-index: 1001;
-    width: 400px;
+    width: 450px;
     height: 240px;
     background: #fff;
     box-shadow: 0 0 30px grey;
@@ -94,6 +94,80 @@ header>ul>li> div.frame{
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid white;
+}
+.user-box{
+
+}
+.up{
+    height:170px;
+    border-bottom:1px solid grey;
+}
+.up>figure{
+    float: left;
+    position:relative;
+}
+.up>figure figcaption{
+    position:absolute;
+    top:93px;
+    left:0;
+    z-index:1002;
+    background: #3050EF;
+    opacity: 0.5;
+    color: white;
+    font-weight: bold;
+    width:100%;
+    height:30px;
+    font-size:14px;
+    text-align: center;
+    padding-top:10px;
+}
+.up> ul{
+    float: left;
+}
+.up>ul>li{
+
+}
+.up>ul>li>h6{
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 0;
+    margin-bottom:0;
+    padding-top:0;
+    margin-top:20px;
+}
+.up>ul>li>p{
+    padding-top:0;
+    margin-top: 0;
+}
+.up>ul>li>a{
+    color: blue;
+    font-size: 15px;
+}
+.up>ul>li>a:hover{
+
+}
+.up>ul>li>button{
+    background: #308CEF;
+    color: white;
+    font-weight: bold;
+    font-size:15px;
+    padding: 10px;
+    margin-top:10px;
+}
+.up>ul>li>button:hover{
+    background: blue;
+}
+.down{
+    padding: 25px;
+    background:#eee;
+}
+.down> button{
+    background: #eee;
+    border: 1px solid grey;
+    padding: 10px;
+}
+.button-right{
+    margin-left:130px;
 }
 .plus-frame{
     box-shadow: 0 0 30px grey;
