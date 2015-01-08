@@ -629,6 +629,7 @@ main div{
     margin-top:10px;
 }
 main>form button{
+    float: left;
     border: 1px solid #ccc;
     background: #eee;
     border-radius: 1px;
@@ -637,12 +638,66 @@ main>form button{
     font-size: 10px;
 }
 .roll{
+    position:relative;
+    float:left;
+    display: inline;
+    height: 34px;
+    width:150px;
+    overflow:hidden;
+    margin-left: 30px;
+    margin-top:0;
+}
+.roll>li{
     border: 1px solid #ccc;
     background: #eee;
     border-radius: 1px;
     padding:10px;
+
     font-weight: bold;
     font-size: 10px;
+}
+.roll>li:hover{
+    cursor: default;
+}
+.roll > li.b0{
+    position: absolute;
+    transition: top 2s;
+    top:0%;
+}
+.roll > li.b1{
+    position: absolute;
+    transition: top 2s;
+    top:100%;
+}
+.roll > li.b2{
+    position: absolute;
+    transition: top 2s;
+    top:200%;
+}
+.roll > li.b3{
+    position: absolute;
+    transition: top 2s;
+    top:300%;
+}
+.roll > li.b4{
+    position: absolute;
+    transition: top 2s;
+    top:400%;
+}
+.roll > li.b5{
+    position: absolute;
+    transition: top 2s;
+    top:500%;
+}
+.roll > li.b6{
+    position: absolute;
+    transition: top 2s;
+    top:600%;
+}
+.roll > li.b7{
+    position: absolute;
+    transition: top 2s;
+    top:700%;
 }
 
 main>form button:hover{

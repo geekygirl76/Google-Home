@@ -94,18 +94,21 @@ $(function(){
         $("footer").css({"color":"black","background":"#eee"});
         $(".plus-frame").css({"color":"black","background":"#eee"});
     });
-    var words= ["I'm Feeling Lucky", "I'm Feeling Hungry",
-"I'm Feeling Wonderful", "I'm Feeling Playful","I'm Feeling Trendy",
-    "I'm Feeling Artistic","I'm Feeling Puzzled",
-    "I'm Feeling Generous"];
+    var buttons= ["b0","b1","b2","b3","b4","b5",
+    "b6","b7"];
 
 
     $(".roll").hover(function(){
-        var n = Math.floor(Math.random() * words.length);
-        $(this).prop("value",words[n]);
+
+        var n = Math.floor(Math.random() * buttons.length);
+        for(var i=0;i <8;i++){
+            $("."+ buttons[i]).css({"top":(i-n)*100+"%"});
+        }
     },
     function(){
-        $(this).prop("value","I'm Feeling Lucky");
+        for(var i=0; i <8; i++){
+            $("." + buttons[i]).css({"top":i*100+"%"});
+        }
     }
     );
 });
