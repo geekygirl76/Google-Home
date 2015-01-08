@@ -661,42 +661,42 @@ main>form button{
 }
 .roll > li.b0{
     position: absolute;
-    transition: top 2s;
+    transition: top 100s;
     top:0%;
 }
 .roll > li.b1{
     position: absolute;
-    transition: top 2s;
+    transition: top 200ms;
     top:100%;
 }
 .roll > li.b2{
     position: absolute;
-    transition: top 2s;
+    transition: top 300ms;
     top:200%;
 }
 .roll > li.b3{
     position: absolute;
-    transition: top 2s;
+    transition: top 400ms;
     top:300%;
 }
 .roll > li.b4{
     position: absolute;
-    transition: top 2s;
+    transition: top 500ms;
     top:400%;
 }
 .roll > li.b5{
     position: absolute;
-    transition: top 2s;
+    transition: top 600ms;
     top:500%;
 }
 .roll > li.b6{
     position: absolute;
-    transition: top 2s;
+    transition: top 700ms;
     top:600%;
 }
 .roll > li.b7{
     position: absolute;
-    transition: top 2s;
+    transition: top 800ms;
     top:700%;
 }
 
