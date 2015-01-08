@@ -1,7 +1,9 @@
 $(function(){
     $(document).on("click",function(event){
+        // console.log($(document));
         event.stopPropagation();
         if (!($(event.target).closest(".grid-li").hasClass("grid-li"))){
+
             if (!($(".frame").hasClass("no-display"))){
                 $(".frame").toggleClass("no-display");
             };
@@ -14,7 +16,7 @@ $(function(){
                 $(".bell-frame").toggleClass("no-display");
             }
         } else{
-            event.stopPropatation();
+            event.stopPropagation();
         };
         if (!($(event.target).closest(".user-li").hasClass("user-li"))){
             if(!($(".user-frame").hasClass("no-display"))){
@@ -63,7 +65,7 @@ $(function(){
     $(".user-li").on("click",function(event){
 
         event.preventDefault();
-        event.stopPropagation();
+
         $(".user-frame").toggleClass("no-display");
     });
     $(".plus-li").on("click",function(event){
