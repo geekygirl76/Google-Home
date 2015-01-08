@@ -13,12 +13,16 @@ $(function(){
             if(!($(".bell-frame").hasClass("no-display"))){
                 $(".bell-frame").toggleClass("no-display");
             }
-        } ;
+        } else{
+            event.stopPropatation();
+        };
         if (!($(event.target).closest(".user-li").hasClass("user-li"))){
             if(!($(".user-frame").hasClass("no-display"))){
                 $(".user-frame").toggleClass("no-display");
             }
-        } ;
+        } else{
+            event.stopPropagation();
+        };
         if (!($(event.target).closest(".plus-li").hasClass("plus-li"))){
 
             if(!($(".plus-frame").hasClass("no-display"))){
@@ -59,6 +63,7 @@ $(function(){
     $(".user-li").on("click",function(event){
 
         event.preventDefault();
+        event.stopPropagation();
         $(".user-frame").toggleClass("no-display");
     });
     $(".plus-li").on("click",function(event){
@@ -81,18 +86,18 @@ $(function(){
         event.stopPropagation();
         event.preventDefault();
         $(".modal").removeClass("no-display");
-        $("header").css({"color":"#ccc","background":"#bbb"});
-        $("main").css({"color":"#ccc"});
-        $("footer").css({"color":"#ccc","background":"#bbb"});
-        $(".plus-frame").css({"color":"#ccc","background":"#bbb"});
+        $("#overlay").css({background: "#fff", opacity: "0.5"});
+        // $("header").css({"color":"#ccc","background":"#bbb"});
+//         $("main").css({"color":"#ccc"});
+//         $("footer").css({"color":"#ccc","background":"#bbb"});
+//         $(".plus-frame").css({"color":"#ccc","background":"#bbb"});
 
     });
     $("#search-close").on("click",function(event){
+        event.stopPropagation();
+        event.preventDefault();
         $(".modal").addClass("no-display");
-        $("header").css({"color":"black","background":"white"});
-        $("main").css({"color":"black"});
-        $("footer").css({"color":"black","background":"#eee"});
-        $(".plus-frame").css({"color":"black","background":"#eee"});
+        $("#overlay").css({background: "white", opacity: 1});
     });
     var buttons= ["b0","b1","b2","b3","b4","b5",
     "b6","b7"];
