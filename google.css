@@ -262,7 +262,7 @@ img#user-face{
     top: 30px;
     left: 200px;
     z-index:2000;
-    box-shadow:0 0 100px #ccc;
+    box-shadow:0 0 10px #000;
 }
 .modal h1{
     font-weight: bold;
