@@ -88,7 +88,7 @@ $(function(){
         event.stopPropagation();
         event.preventDefault();
         $(".modal").removeClass("no-display");
-        $("#overlay").css({background: "#fff", opacity: "0.5"});
+        $("#overlay").css({background: "#fff", opacity: "0.3"});
         // $("header").css({"color":"#ccc","background":"#bbb"});
 //         $("main").css({"color":"#ccc"});
 //         $("footer").css({"color":"#ccc","background":"#bbb"});
